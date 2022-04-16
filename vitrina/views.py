@@ -1,7 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Product
 
-
 def vitrina (request):
     Products = Product.objects.all()
     return render(request, 'vitrina/vitrina.html', {'Products': Products})

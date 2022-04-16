@@ -20,10 +20,13 @@ from django.conf import settings
 from shop import views
 
 urlpatterns = [
+    path('signup/', views.signupuser, name='signupuser'),
+    path('current/', views.currentcart, name='currentcart'),
+
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('vitrina', include('vitrina.urls')),
-    path('cart', include('cart.urls')),
+    path('vitrina/', include('vitrina.urls')),
+    path('cart/', include('cart.urls')),
 
 
 ]
