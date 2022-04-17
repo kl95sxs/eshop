@@ -4,6 +4,6 @@ app_name = 'vitrina'
 
 urlpatterns = [
     path('', views.vitrina, name='vitrina'),
-    path('/<int:product_id>/', views.detail, name='detail'),
+    path('<int:product_id>/', views.detail, name='detail'),
 
 ]

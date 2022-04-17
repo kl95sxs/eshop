@@ -1,5 +1,8 @@
+{% extends 'shop/base.html' %}
+{% block content %}
 <h1> Welcome to my Ecigarette Shop </h1>
 <h2> place for logo change to img </h2>
 <a href="{% url 'vitrina:vitrina' %}"> ВИТРИНА </a>
 <br>
 <a href="{% url 'cart:cart' %}"> Корзина </a>
+{% endblock %}
